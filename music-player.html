@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music-player.css">
+    <script src="https://kit.fontawesome.com/abf5c99925.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="media/WhatsApp Image 2024-06-28 at 15.15.18 (1).jpeg" class="song-img">
+            <h1>Payphone (Remix)</h1>
+            <p>Maroon 5 ft Wiz Khalifa</p>
+            <audio id="song">
+                <source src="media/Maroon_5_ft_Wiz_Khalifa_-_Payphone_(Jesusful.com).mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div> 
+    <script src="music-player.js"></script>
+</body>
+</html>

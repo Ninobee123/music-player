@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 0px;
+  background-color: #333;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #333;
+  background-image: url(media/WhatsApp\ Image\ 2024-06-28\ at\ 15.15.18\ \(1\).jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  backdrop-filter:blur(5px);
+}
+
+.music-player {
+  background: #ffe0e5;
+  width: 100%;
+  max-width: 400px;
+  padding: 25px 35px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+nav .circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  color: #f53192;
+  box-shadow: 0.5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.song-img {
+  width: 220px;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+
+.music-player h1 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.music-player p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #f53192;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 40px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #f53192;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: #f53192;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .music-player {
+    padding: 20px 30px;
+  }
+
+  .song-img {
+    width: 180px;
+  }
+
+  .music-player h1 {
+    font-size: 18px;
+  }
+
+  .music-player p {
+    font-size: 12px;
+  }
+
+  .controls div {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .music-player {
+    padding: 15px 25px;
+  }
+  .container{
+   
+  }
+
+  .song-img {
+    width: 140px;
+  }
+
+  .music-player h1 {
+    font-size: 16px;
+  }
+
+  .music-player p {
+    font-size: 10px;
+  }
+
+  .controls div {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+
+  #progress {
+    height: 4px;
+    margin: 30px 0;
+  }
+
+  #progress::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .music-player {
+    padding: 10px 20px;
+  }
+
+  .song-img {
+    width: 100px;
+  }
+
+  .music-player h1 {
+    font-size: 14px;
+  }
+
+  .music-player p {
+    font-size: 8px;
+  }
+
+  .controls div {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+
+  #progress {
+    height: 3px;
+    margin: 20px 0;
+  }
+
+  #progress::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 240px) {
+  .music-player {
+    padding: 5px 10px;
+  }
+
+  .song-img {
+    width: 80px;
+  }
+
+  .music-player h1 {
+    font-size: 12px;
+  }
+
+  .music-player p {
+    font-size: 6px;
+  }
+
+  .controls div {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+  }
+
+  #progress {
+    height: 2px;
+    margin: 15px 0;
+  }
+
+  #progress::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+}
